@@ -14,6 +14,9 @@ public class playerswitch : MonoBehaviour
     {
         movementcharacter1 = Character1.GetComponent<Movement>();
         movementcharacter2 = Character2.GetComponent<Movement>();
+
+        movementcharacter1.enabled = true;
+        movementcharacter2.enabled = false;
     }
     // Update is called once per frame
     void Update()

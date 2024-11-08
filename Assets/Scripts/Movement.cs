@@ -6,13 +6,15 @@ public class Movement : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private Rigidbody Rigidbody;
     private float horizontal;
-    private float moveSpeed;
+
+    [SerializeField]
+    private float moveSpeed = 5f;
 
 
     void Start()
     {
         Rigidbody = GetComponent<Rigidbody>();
-        moveSpeed = 15f;
+        
 
     }
     void Update()
